@@ -10,7 +10,6 @@ RSpec.describe 'Bot' do
 
       expect(new_bot).to be_a(Bot)
       expect(new_bot.center).to eq(1)
-      expect(new_bot.bot_location).to eq([1, 1])
     end
   end
 end

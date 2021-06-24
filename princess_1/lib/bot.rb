@@ -1,10 +1,8 @@
 class Bot
-  attr_reader :size, :bot_location, :center
+  attr_reader :center
 
   def initialize(size)
-    @size = size
     @center = center_grid(size)
-    @bot_location = @center, @center
   end
 
   def center_grid(size)
@@ -13,5 +11,6 @@ class Bot
 
   def place_on_grid(grid)
     grid[@center][@center] = 'm'
+    [@center, @center]
   end
 end

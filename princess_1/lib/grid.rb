@@ -1,10 +1,9 @@
 class Grid
-  attr_accessor :grid
+  attr_accessor :grid, :bot_location, :princess_location
 
   def initialize(size)
     @grid = Array.new(size)
     create_grid(size)
-    # @center = center_grid(size)
   end
 
   def create_grid(size)
@@ -19,11 +18,17 @@ class Grid
 
   def place_bot(size)
     new_bot = Bot.new(size)
-    new_bot.place_on_grid(grid)
+    @bot_location = new_bot.place_on_grid(grid)
   end
 
   def place_princess(size)
     new_princess = Princess.new(size)
-    new_princess.place_on_grid(grid)
+    @princess_location = new_princess.place_on_grid(grid)
+  end
+
+  def shortest_path(size, grid)
+    new_path = Path.new(size, grid)
+    # require "pry"; binding.pry
+    new_path.make_path(size, grid)
   end
 end
