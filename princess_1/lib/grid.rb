@@ -1,14 +1,28 @@
 class Grid
-  attr_reader :grid_array
+  attr_accessor :grid
 
   def initialize(size)
-    @grid_array = Array.new(size)
-    @grid = create_grid(size)
+    @grid = Array.new(size)
+    create_grid(size)
+    @center = center_grid(size)
   end
 
   def create_grid(size)
     (0...size).each do |row|
-      grid_array[row] = '-' * size
+      grid[row] = '-' * size
     end
   end
+
+  def center_grid(size)
+    (size - 1) / 2
+  end
+
+  def place_bot(size)
+    new_bot = Bot.new(size)
+    new_bot.place_on_grid(grid)
+  end
+
+  # def place_princess
+  #
+  # end
 end
