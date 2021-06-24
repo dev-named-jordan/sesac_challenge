@@ -1,29 +1,31 @@
 class Path
 
-  attr_reader :moves, :path_size, :grid
+  attr_reader :path_size, :grid
 
   def initialize(size, grid)
-    @moves = []
     @path_size = size
     @grid = grid
   end
 
-  def make_path(size, grid)
-    # moves = []
+  def self.make_path(size, grid)
+    moves = []
     first_move = (grid.bot_location[0] - grid.princess_location[0]).abs
     second_move = (grid.bot_location[1] - grid.princess_location[1]).abs
+
+#might need to add a minus or plus one to the grid.bot_locations
+
     if grid.bot_location[0] < grid.princess_location[0]
-      @moves << 'down,' * first_move
+      moves << 'down,' * first_move
     else
-      @moves << 'up,' * first_move
+      moves << 'up,' * first_move
     end
     if grid.bot_location[1] < grid.princess_location[1]
-      @moves << 'right,' * second_move
+      moves << 'right,' * second_move
     else
-      @moves << 'left,' * second_move
+      moves << 'left,' * second_move
     end
-    # require "pry"; binding.pry
-    puts @moves.join.gsub(",", "\n")
+    require "pry"; binding.pry
+    puts moves.join.gsub(",", "\n")
   end
 end
 
