@@ -4,7 +4,7 @@ class Grid
   def initialize(size)
     @grid = Array.new(size)
     create_grid(size)
-    @center = center_grid(size)
+    # @center = center_grid(size)
   end
 
   def create_grid(size)
@@ -22,7 +22,8 @@ class Grid
     new_bot.place_on_grid(grid)
   end
 
-  # def place_princess
-  #
-  # end
+  def place_princess(size)
+    new_princess = Princess.new(size)
+    new_princess.place_on_grid(grid)
+  end
 end
