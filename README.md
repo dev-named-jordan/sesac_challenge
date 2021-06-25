@@ -64,4 +64,4 @@
 
 #### princess_2
 
-Becasue of how I structured the 1st exercise, the 2nd was nearly done when I started it. The only changes are slightly different inputs, and no need to a Bot class any longer. 
+- Becasue of how I structured the 1st exercise, the 2nd was nearly done when I started it. The only changes are slightly different inputs, and no need to a Bot class any longer. 
