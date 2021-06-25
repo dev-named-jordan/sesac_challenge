@@ -52,8 +52,10 @@
 
 - Initially, my thoughts on the exercise were to create a few classes - Grid, Bot, Princess, and Path. I would run everthing through the Grid class, so that I could eventually use my Grid class for both exercises. Eventually, I realized that I was not taking input the way I was expected to, and rather I had created a system that could randomly produce valid locations for bot and princess(Again, with the hope that I could use the logic for both exercises). This code is working, and fully tested under princess_1_oop, if you are interested. 
 
-What I needed to do, rather than create, and place objects was actually much simpler. Taking the size, and grid input provided to me, I was able to slim down my code quite a bit, and not require the instantiation of any objects in my code. Ultimatley, I was able to make a module to share my Path logic, for both exercises in addition to completing both exercises, with 100% coverage and passing tests.
+What I needed to do, rather than create, and place objects was actually much simpler. Taking the size, and grid input provided to me, I was able to slim down my code quite a bit, and not require the instantiation of any objects in my code. Ultimatley, I was able to make a module to share my Path logic, for both exercises in addition to completing both exercises, with minimal classes, and with 100% coverage and passing tests.
 
 #### princess_1 Details
+
+- Bot, and Princess classes ended up nearly the same and are potentially an opportunity for refactor. The only responsibility for each of them, is to find their own locaitons on the grid input. This was achieved through using nested iterations and each_with_index, to validate the presence and location of both "m" and "p", on the board, then return the location. 
 
 #### princess_2 Details
