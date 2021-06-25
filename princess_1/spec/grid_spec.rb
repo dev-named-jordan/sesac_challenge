@@ -3,9 +3,6 @@ require_relative '../lib/grid'
 require_relative '../lib/bot'
 
 RSpec.describe 'Grid' do
-  # before :each do
-  #   new_grid = Grid.new(3)
-  # end
   describe 'grid initialize' do
     it 'is an instance of a grid' do
 

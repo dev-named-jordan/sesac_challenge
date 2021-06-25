@@ -9,7 +9,6 @@ RSpec.describe 'Princess' do
       new_princess = Princess.new(3)
 
       expect(new_princess).to be_a(Princess)
-      # expect(new_princess.princess_location).to eq([0, 0])
     end
   end
 end

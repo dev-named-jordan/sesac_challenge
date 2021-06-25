@@ -23,9 +23,6 @@ class Grid
   end
 
   def shortest_path(size, grid)
-    # new_path = Path.new(size, grid)
-    # # require "pry"; binding.pry
-    # new_path.make_path(size, grid)
     Path.make_path(size, grid)
   end
 end
