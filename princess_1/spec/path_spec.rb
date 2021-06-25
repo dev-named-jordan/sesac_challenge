@@ -49,11 +49,5 @@ RSpec.describe 'Path' do
       new_path = Path.displayPathtoPrincess(size, grid)
       expect(new_path).to eq("Input is invalid")
     end
-    # it 'can clean negative index' do
-    #   bot_location = [1, -1]
-    #   princess_location = [-1, -1]
-    #
-    #   expect(negative_indice_cleaner(bot_location, princess_location)).to eq("Input is invalid")
-    # end
   end
 end
