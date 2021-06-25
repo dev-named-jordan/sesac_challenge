@@ -1,14 +1,34 @@
 class Path
 
-  attr_reader :path_size, :grid
-
-  def initialize(size, grid)
-    @path_size = size
-    @grid = grid
-  end
+  # attr_reader :path_size, :grid
+  #
+  # def initialize(size, grid)
+  #   @path_size = size
+  #   @grid = grid
+  # end
 
   def self.make_path(size, grid)
     moves = []
+
+# grid.grid[0].size - 1
+
+    if grid.princess_location[0] < 0
+      # grid.princess_location[0] = grid.princess_location[0].abs
+      grid.princess_location[0] = grid.grid[0].size - 1
+    end
+    if grid.princess_location[1] < 0
+      # grid.princess_location[1] = grid.princess_location[1].abs
+      grid.princess_location[1] = grid.grid[0].size - 1
+    end
+    if grid.bot_location[0] < 0
+      # grid.bot_location[0] = grid.bot_location[0].abs
+      grid.bot_location[0] = grid.grid[0].size - 1
+    end
+    if grid.bot_location[1] < 0
+      # grid.bot_location[1] = grid.bot_location[1].abs
+      grid.bot_location[1] = grid.grid[0].size - 1
+    end
+
     first_move = (grid.bot_location[0] - grid.princess_location[0]).abs
     second_move = (grid.bot_location[1] - grid.princess_location[1]).abs
 
@@ -24,10 +44,17 @@ class Path
     else
       moves << 'left,' * second_move
     end
-    require "pry"; binding.pry
-    puts moves.join.gsub(",", "\n")
+    moves.join.gsub(",", "\n")
   end
 end
+# p1--    --p2   ---   ---
+#  -m-    -m-    -m-   -m-
+#  ---    ---   p3--   --p4
+#  m = [1, 1]
+# p1 = [0, 0]
+# p2 = [0, 2]
+# p3 = [2, 0]
+# p4 = [2, 2]
 
 # -----           -----
 # -----           -p---

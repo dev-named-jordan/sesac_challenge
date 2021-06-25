@@ -17,7 +17,6 @@ RSpec.describe 'Path' do
 
       # new_path = Path.make_path(3, new_grid)
       new_path = new_grid.shortest_path(3, new_grid)
-# require "pry"; binding.pry
       expect(new_path).to be_an(String)
     end
   end

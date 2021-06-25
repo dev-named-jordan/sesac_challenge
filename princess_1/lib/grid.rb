@@ -12,10 +12,6 @@ class Grid
     end
   end
 
-  def center_grid(size)
-    (size - 1) / 2
-  end
-
   def place_bot(size)
     new_bot = Bot.new(size)
     @bot_location = new_bot.place_on_grid(grid)
