@@ -50,12 +50,16 @@
 
 #### TLDR
 
-- Initially, my thoughts on the exercise were to create a few classes - Grid, Bot, Princess, and Path. I would run everthing through the Grid class, so that I could eventually use my Grid class for both exercises. Eventually, I realized that I was not taking input the way I was expected to, and rather I had created a system that could randomly produce valid locations for bot and princess(Again, with the hope that I could use the logic for both exercises). This code is working, and fully tested under princess_1_oop, if you are interested. 
+- Initially, my thoughts on the exercise were to create a few classes - Grid, Bot, Princess, and Path. I would run everthing through the Grid class, so that I could eventually use my Grid class for both exercises. Eventually, I realized that I was not taking input the way I was expected to, and rather I had created a system that could randomly produce valid locations for bot and princess(Again, with the hope that I could use the logic for both exercises). This code is working, and fully tested under princess_1_oop(But obviously does not pass any Hacker Rank tests) if you are interested in taking a look.
 
-What I needed to do, rather than create, and place objects was actually much simpler. Taking the size, and grid input provided to me, I was able to slim down my code quite a bit, and not require the instantiation of any objects in my code. Ultimatley, I was able to make a module to share my Path logic, for both exercises in addition to completing both exercises, with minimal classes, and with 100% coverage and passing tests.
+- What I needed to do, rather than create, and place objects was actually much simpler. Taking the size, and grid input provided to me, I was able to slim down my code quite a bit, and not require the instantiation of any objects in my code. Ultimatley, I was able to make a module to share my Path logic, for both exercises in addition to completing both exercises, with minimal classes, and with 100% coverage and passing tests.
 
 #### princess_1 Details
 
-- Bot, and Princess classes ended up nearly the same and are potentially an opportunity for refactor. The only responsibility for each of them, is to find their own locaitons on the grid input. This was achieved through using nested iterations and each_with_index, to validate the presence and location of both "m" and "p", on the board, then return the location. 
+- Bot, and Princess classes ended up nearly the same and are potentially an opportunity for refactor. The only responsibility for each of them, is to find their own locaitons on the grid input, using a class method. This was achieved through using nested iterations and each_with_index, to validate the presence and location of both "m" and "p", on the board, then return the location. 
+
+- Path was the only other class I ended up needing for the exercise. Though I must also mention here, that Path leans heavily on the path_helper_module, used by both exercises, and to be discussed more later. The Path class begins with a gaurd clause for bad input data form the user. Allowing for only Integer, Odd, and between 3-99 for the size, and allowing only an Array for the grid. Next, we call on the class methods from Bot, and Princess and assign them to variables, then use those variables as arguments for the make_path method in the path_helper_module. 
+
+- The path_helper_module was composed of multiple methods, that work together. Becaue I am using class methods in the Path class, I used extend, instead of include in my Path class for use of the module. 
 
 #### princess_2 Details
