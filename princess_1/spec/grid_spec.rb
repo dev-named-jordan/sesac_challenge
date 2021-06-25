@@ -32,11 +32,11 @@ RSpec.describe 'Grid' do
       expect(new_grid.grid).to be_an(Array)
 
       new_array = [
-        [0, 0],
-        [0, -1],
-        [-1, 0],
-        [-1, -1]
-      ]
+                    [0, 0],
+                    [0, -1],
+                    [-1, 0],
+                    [-1, -1]
+                  ]
 
       new_grid.place_princess(3)
 
