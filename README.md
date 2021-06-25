@@ -6,7 +6,7 @@
 - [Tech Used](#tech-used)
 ### My solutions
 
-- These are my solutions for the "Bot Saves Princess challenge 1 & 2". Navigate to the 2nd link on each line below, for a gist file, which you can copy/paste at the bottom of the Hacker Rank challenge page, located in the first link on each line below. Make sure to change the Hacker Rank submission setting to "Ruby".
+- These are my solutions for the "Bot Saves Princess challenge 1 & 2". Navigate to the 2nd link on each challenge below, for a gist file, which you can copy/paste at the bottom of the Hacker Rank challenge page, located in the first link on each challenge below. Make sure to change the Hacker Rank submission setting to "Ruby".
 
 Challenge 1 - https://www.hackerrank.com/challenges/saveprincess  - https://gist.github.com/jordanfbeck0528/420d1dccce286f3d78cfe95e2b0f1ea3
 
