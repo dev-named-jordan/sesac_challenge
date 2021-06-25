@@ -1,6 +1,5 @@
 class Path
-  def self.make_path(size, bot_location, princess_location)
-    # require "pry"; binding.pry
+  def self.make_path(m, bot_location, princess_location)
     moves = []
     if princess_location[0] < 0
       princess_location[0] = size - 1
@@ -31,35 +30,9 @@ class Path
     moves.join.gsub(",", "\n")
   end
 
-  def self.locate_bot(grid)
-    grid.each_with_index do |element, index|
-      if element.include?("m")
-        element.chars.each_with_index do |e, i|
-          if e == "m"
-            return [index, i]
-          end
-        end
-      end
-    end
-  end
-
-  def self.locate_princess(grid)
-    grid.each_with_index do |element, index|
-      if element.include?("p")
-        element.chars.each_with_index do |e, i|
-          if e == "p"
-            return [index, i]
-          end
-        end
-      end
-    end
-  end
-
-  def self.displayPathtoPrincess(size, grid)
-    # place_bot(size)
-    # place_princess(size)
-    bot_location = locate_bot(grid)
-    princess_location = locate_princess(grid)
-    make_path(size, bot_location, princess_location)
+  def self.displayPathtoPrincess(m, grid)
+    bot_location = Bot.locate_bot(grid)
+    princess_location = Princess.locate_princess(grid)
+    make_path(m, bot_location, princess_location)
   end
 end

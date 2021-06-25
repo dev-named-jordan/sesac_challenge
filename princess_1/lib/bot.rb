@@ -1,21 +1,13 @@
 class Bot
-  attr_reader :center
-
-  def initialize(size)
-    @center = center_grid(size)
+  def self.locate_bot(grid)
+    grid.each_with_index do |element, index|
+      if element.include?("m")
+        element.chars.each_with_index do |e, i|
+          if e == "m"
+            return [index, i]
+          end
+        end
+      end
+    end
   end
-
-  def center_grid(size)
-    (size - 1) / 2
-  end
-
-  def place_on_grid(grid)
-    grid[@center][@center] = 'm'
-    [@center, @center]
-  end
-
-  # def find_on_grid(grid)
-  #
-  #   require "pry"; binding.pry
-  # end
 end
