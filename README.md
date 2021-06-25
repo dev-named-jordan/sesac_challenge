@@ -46,10 +46,10 @@
 
 - [TLDR](#TLDR)
 - [princess_1](#princess_1)
-    [Bot](#bot)
-    [Princess](#princess)
-    [Path](#path)
-    [Module](#module)
+    - [Bot](#bot)
+    - [Princess](#princess)
+    - [Path](#path)
+    - [Module](#module)
 - [princess_2](#princess_2)
 
 ### TLDR
