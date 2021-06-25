@@ -40,5 +40,10 @@ RSpec.describe 'Path' do
       expect(new_path).to be_an(String)
       expect(new_path).to eq("DOWN\nRIGHT\n")
     end
+    it 'Can find the princess location in a larger grid' do
+      array_grid = ["-----", "-----", "--m--", "-----", "----p"]
+      expected = Bot.find_location(array_grid, "p")
+      expect(expected).to eq([4, 4])
+    end
   end
 end
