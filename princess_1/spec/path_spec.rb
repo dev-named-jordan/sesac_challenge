@@ -12,5 +12,35 @@ RSpec.describe 'Path' do
       expect(new_path).to be_an(String)
       expect(new_path).to eq("DOWN\nRIGHT\n")
     end
+    it 'gives error when input is invalid with size as a string' do
+      size = "3"
+      grid = ["---", "-m-", "--p"]
+      new_path = Path.displayPathtoPrincess(size, grid)
+      expect(new_path).to eq("Input is invalid")
+    end
+    it 'gives error when input is invalid when size is over 99' do
+      size = 101
+      grid = ["---", "-m-", "--p"]
+      new_path = Path.displayPathtoPrincess(size, grid)
+      expect(new_path).to eq("Input is invalid")
+    end
+    it 'gives error when input is invalid when size is under 3' do
+      size = 1
+      grid = ["---", "-m-", "--p"]
+      new_path = Path.displayPathtoPrincess(size, grid)
+      expect(new_path).to eq("Input is invalid")
+    end
+    it 'gives error when input is invalid when even number is input' do
+      size = 4
+      grid = ["---", "-m-", "--p"]
+      new_path = Path.displayPathtoPrincess(size, grid)
+      expect(new_path).to eq("Input is invalid")
+    end
+    it 'gives error when input ifor grid is not an array' do
+      size = 4
+      grid = "---", "-m-", "--p"
+      new_path = Path.displayPathtoPrincess(size, grid)
+      expect(new_path).to eq("Input is invalid")
+    end
   end
 end
