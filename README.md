@@ -1,4 +1,13 @@
-## Hacker Rank's "Save the Princess challenge 1 & 2"
+## Hacker Rank's "Bot Saves Princess challenge 1 & 2"
 
-princess_1_hacker_rank - https://gist.github.com/jordanfbeck0528/420d1dccce286f3d78cfe95e2b0f1ea3
-princess_2_hacker_rank - https://gist.github.com/jordanfbeck0528/185c9ad15f062ea1e9293674aa1d13f8
+## Table of Contents
+- [My Solutions](#my-solutions)
+
+
+### My solutions
+
+- These are my solutions for the "Bot Saves Princess challenge 1 & 2". Navigate to the 2nd link on each line below, for a gist file, which you can copy/paste at the bottom of the Hacker Rank challenge page, located in the first link on each line below. Make sure to change the Hacker Rank submission setting to "Ruby".
+
+Challenge 1 - https://www.hackerrank.com/challenges/saveprincess  - https://gist.github.com/jordanfbeck0528/420d1dccce286f3d78cfe95e2b0f1ea3
+
+Challenge 2 - https://www.hackerrank.com/challenges/saveprincess2 - https://gist.github.com/jordanfbeck0528/185c9ad15f062ea1e9293674aa1d13f8
