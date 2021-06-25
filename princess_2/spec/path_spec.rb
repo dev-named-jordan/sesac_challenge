@@ -5,7 +5,7 @@ require '../modules/path_helper_module'
 
 RSpec.describe 'Path' do
   describe 'next move' do
-    it 'can find next move' do
+    it 'can find next move from user input' do
       n = 5
       r = 2
       c = 3
