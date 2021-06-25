@@ -22,9 +22,21 @@ class Grid
     @princess_location = new_princess.place_on_grid(grid)
   end
 
-  def displayPathtoPrincess(size, grid)
-    place_bot(size)
-    place_princess(size)
-    Path.make_path(size, grid)
+  def locate_bot(size, grid)
+    @bot_location = new_bot.find_on_grid(grid)
   end
+
+  def locate_princess(size, grid)
+    @princess_location = new_princess.find_on_grid(grid)
+  end
+
+  # def displayPathtoPrincess(size, grid)
+  #   # place_bot(size)
+  #   # place_princess(size)
+  #   new_bot = Bot.new(size)
+  #   new_princess = Princess.new(size)
+  #   locate_bot(size, grid)
+  #   locate_princess(size, grid)
+  #   Path.make_path(size, grid)
+  # end
 end

@@ -13,4 +13,9 @@ class Bot
     grid[@center][@center] = 'm'
     [@center, @center]
   end
+
+  # def find_on_grid(grid)
+  #
+  #   require "pry"; binding.pry
+  # end
 end

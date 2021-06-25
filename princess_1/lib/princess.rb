@@ -9,4 +9,8 @@ class Princess
     grid[princess_location[0]][princess_location[1]] = 'p'
     princess_location
   end
+
+  # def find_on_grid(grid)
+  #
+  # end
 end
