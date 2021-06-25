@@ -1,6 +1,7 @@
 require '../spec_helper'
 require_relative '../lib/path'
 require_relative '../lib/princess'
+require '../modules/path_helper_module'
 
 RSpec.describe 'Path' do
   describe 'next move' do
