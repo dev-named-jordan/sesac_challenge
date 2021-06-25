@@ -46,7 +46,7 @@
 
 - [TLDR](#TLDR)
 - [princess_1](#princess_1)
-- [simplecov](#princess_2)
+- [princess_2](#princess_2)
 
 #### TLDR
 
