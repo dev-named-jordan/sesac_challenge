@@ -15,7 +15,7 @@ RSpec.describe 'Path' do
       new_grid.place_bot(3)
       new_grid.place_princess(3)
 
-      new_path = new_grid.shortest_path(3, new_grid)
+      new_path = new_grid.displayPathtoPrincess(3, new_grid)
       expect(new_path).to be_an(String)
     end
     it 'is an instance of path class with size 7' do
@@ -27,7 +27,7 @@ RSpec.describe 'Path' do
       new_grid.place_bot(7)
       new_grid.place_princess(7)
 
-      new_path = new_grid.shortest_path(7, new_grid)
+      new_path = new_grid.displayPathtoPrincess(7, new_grid)
 
       expect(new_path).to be_an(String)
     end
@@ -40,7 +40,7 @@ RSpec.describe 'Path' do
       new_grid.place_bot(99)
       new_grid.place_princess(99)
 
-      new_path = new_grid.shortest_path(99, new_grid)
+      new_path = new_grid.displayPathtoPrincess(99, new_grid)
       expect(new_path).to be_an(String)
     end
   end

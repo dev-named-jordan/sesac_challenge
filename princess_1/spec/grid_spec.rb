@@ -38,6 +38,7 @@ RSpec.describe 'Grid' do
       new_grid.place_princess(3)
 
       expect(new_array).to include(new_grid.princess_location)
+      # ["---", "-m-", "--p"] 
     end
   end
 end

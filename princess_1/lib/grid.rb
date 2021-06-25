@@ -22,7 +22,9 @@ class Grid
     @princess_location = new_princess.place_on_grid(grid)
   end
 
-  def shortest_path(size, grid)
+  def displayPathtoPrincess(size, grid)
+    place_bot(size)
+    place_princess(size)
     Path.make_path(size, grid)
   end
 end

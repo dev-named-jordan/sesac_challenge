@@ -1,5 +1,4 @@
 class Path
-
   def self.make_path(size, grid)
     moves = []
     if grid.princess_location[0] < 0
