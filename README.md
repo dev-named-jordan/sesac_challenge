@@ -60,6 +60,6 @@
 
 - Path was the only other class I ended up needing for the exercise. Though I must also mention here, that Path leans heavily on the path_helper_module, used by both exercises, and to be discussed more later. The Path class begins with a gaurd clause for bad input data form the user. Allowing for only Integer, Odd, and between 3-99 for the size, and allowing only an Array for the grid. Next, we call on the class methods from Bot, and Princess and assign them to variables, then use those variables as arguments for the make_path method in the path_helper_module. 
 
-- The path_helper_module was composed of multiple methods, that work together. Becaue I am using class methods in the Path class, I used extend, instead of include in my Path class for use of the module. 
+- Becaue I am using class methods in the Path class, I used extend, instead of include in my Path class, for use of the module. The path_helper_module was composed of multiple methods, that work together. They are make_path, and directions. Eventually removed and not needed, was also a number_cleaner, for absolute value math. "directions" is a method that uses the locations of bot, and princess, to find a route between them. It stores "moves" in an Array with the same name, the moves are evnetually called at the end of the method, using a join, and gsub to replace the commas with "\n". 
 
 #### princess_2
