@@ -54,7 +54,7 @@
 
 - What I needed to do, rather than create, and place objects was actually much simpler. Taking the size, and grid input provided to me, I was able to slim down my code quite a bit, and not require the instantiation of any objects in my code. Ultimatley, I was able to make a module to share my Path logic, for both exercises in addition to completing both exercises, with minimal classes, and with 100% coverage and passing tests.
 
-#### princess_1 Details
+#### princess_1
 
 - Bot, and Princess classes ended up nearly the same and are potentially an opportunity for refactor. The only responsibility for each of them, is to find their own locaitons on the grid input, using a class method. This was achieved through using nested iterations and each_with_index, to validate the presence and location of both "m" and "p", on the board, then return the location. 
 
@@ -62,4 +62,4 @@
 
 - The path_helper_module was composed of multiple methods, that work together. Becaue I am using class methods in the Path class, I used extend, instead of include in my Path class for use of the module. 
 
-#### princess_2 Details
+#### princess_2
