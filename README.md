@@ -27,6 +27,6 @@ Challenge 2 - https://www.hackerrank.com/challenges/saveprincess2 - https://gist
 
 ### Tech Used
 
-- [RSpec] https://rspec.info/documentation/3.10/rspec-core/ 3.10
+- [RSpec] https://rspec.info/documentation/3.10/rspec-core/ 
 - [pry] https://github.com/pry/pry
 - [simplecov] https://github.com/simplecov-ruby/simplecov
