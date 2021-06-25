@@ -1,5 +1,6 @@
 require '../spec_helper'
 require_relative '../lib/path'
+require_relative '../lib/princess'
 
 RSpec.describe 'Path' do
   describe 'next move' do
@@ -8,8 +9,7 @@ RSpec.describe 'Path' do
       r = 2
       c = 3
       grid = ["-----", "-----", "p--m-", "-----", "-----"]
-# require "pry"; binding.pry
-      # expect(nextMove(n,r,c,grid)).to be_an(String)
+      expect(nextMove(n,r,c,grid)).to be_an(String)
       expect(nextMove(n,r,c,grid)).to eq("LEFT")
     end
     it 'can find next move one space away' do
@@ -17,8 +17,6 @@ RSpec.describe 'Path' do
       r = 2
       c = 2
       grid = ["-----", "-----", "--mp-", "-----", "-----"]
-# require "pry"; binding.pry
-      # expect(nextMove(n,r,c,grid)).to be_an(String)
       expect(nextMove(n,r,c,grid)).to eq("RIGHT")
     end
     # it 'is an instance of path class with size 7' do

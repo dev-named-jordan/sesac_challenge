@@ -29,33 +29,8 @@ def make_path(m, bot_location, princess_location)
   moves.join.gsub(",", "\n")
 end
 
-def locate_bot(grid)
-  grid.each_with_index do |element, index|
-    if element.include?("m")
-      element.chars.each_with_index do |e, i|
-        if e == "m"
-          return [index, i]
-        end
-      end
-    end
-  end
-end
-
-def locate_princess(grid)
-  grid.each_with_index do |element, index|
-    if element.include?("p")
-      element.chars.each_with_index do |e, i|
-        if e == "p"
-          return [index, i]
-        end
-      end
-    end
-  end
-end
-
 def nextMove(n,r,c,grid)
   bot_location = [r, c]
-  princess_location = locate_princess(grid)
-  # require "pry"; binding.pry
+  princess_location = Princess.locate_princess(grid)
   make_path(n, bot_location, princess_location).split("\n").first
 end
