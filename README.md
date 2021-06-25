@@ -14,7 +14,7 @@ Challenge 2 - https://www.hackerrank.com/challenges/saveprincess2 - https://gist
 
 ### Local Install
 
-- So, you want to take it for a spin on your machine, do ya?
+- If you would like to install and run tests locally run the instructions below, in your terminal.
 
   git@github.com:jordanfbeck0528/sesac_challenge.git
   cd sesac
@@ -26,3 +26,7 @@ Challenge 2 - https://www.hackerrank.com/challenges/saveprincess2 - https://gist
   bundle exec rspec
 
 ### Tech Used
+
+- [RSpec] https://rspec.info/documentation/3.10/rspec-core/ 3.10
+- [pry] https://github.com/pry/pry
+- [simplecov] https://github.com/simplecov-ruby/simplecov
