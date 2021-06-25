@@ -56,7 +56,7 @@
 
 #### princess_1
 
-- Bot, and Princess classes ended up nearly the same and are potentially an opportunity for refactor. The only responsibility for each of them, is to find their own locaitons on the grid input, using a class method. This was achieved through using nested iterations and each_with_index, to validate the presence and location of both "m" and "p", on the board, then return the location. 
+- Bot, and Princess classes in princess_1 ended up nearly the same and are potentially an opportunity for refactor. The only responsibility for each of them, is to find their own locaitons on the grid input, using a class method. This was achieved through using nested iterations and each_with_index, to validate the presence and location of both "m" and "p", on the board, then return the location. 
 
 - Path was the only other class I ended up needing for the exercise. Though I must also mention here, that Path leans heavily on the path_helper_module, used by both exercises, and to be discussed more later. The Path class begins with a gaurd clause for bad input data form the user. Allowing for only Integer, Odd, and between 3-99 for the size, and allowing only an Array for the grid. Next, we call on the class methods from Bot, and Princess and assign them to variables, then use those variables as arguments for the make_path method in the path_helper_module. 
 
