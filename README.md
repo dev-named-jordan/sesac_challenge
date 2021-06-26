@@ -47,9 +47,9 @@
 
 ## Testing Tech Used
 
-- [RSpec] https://rspec.info/documentation/3.10/rspec-core/ 
-- [pry] https://github.com/pry/pry
-- [simplecov] https://github.com/simplecov-ruby/simplecov
+- [RSpec] (https://rspec.info/documentation/3.10/rspec-core/) 
+- [pry] (https://github.com/pry/pry)
+- [simplecov] (https://github.com/simplecov-ruby/simplecov)
 
 ## Prerequisites
 
