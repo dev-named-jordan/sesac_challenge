@@ -14,6 +14,7 @@
     [Path Helper Module](#path-helper-module)
     [Princess Helper Module](#princess-helper-module)
   - [princess_2](#princess_2)
+  - [Testing](#testing)
   - [Areas for Improvement](#areas-for-improvement)
 
 ## My solutions
@@ -92,7 +93,13 @@ Both exercises used the exact same methods for locate_princes, so I made another
 
 ![Screen Shot 2021-06-25 at 7 23 06 PM](https://user-images.githubusercontent.com/68141454/123497439-c8a12680-d5ea-11eb-9940-c1a502b7b925.png)
 
+### Testing 
+
+- My testing is all passing, with a 100% in simplecov. This includes happy, and sad path testing, with some edge cases. A small example below -
+
+![Screen Shot 2021-06-25 at 7 34 52 PM](https://user-images.githubusercontent.com/68141454/123497727-6cd79d00-d5ec-11eb-9fa9-3bf796c7162e.png)
+
 ### Areas for Improvement
 
-- As always there are tons of places a person can improve. I think right away I would say that I am not where I want to be with my git history. I got a little caught up in the ADHD zone, and did not commit as frequently as I wanted to. I did an alright job taking time to plan for this challenge, I wrote my initial game plan out on post it notes, and moved htem around on my white board. As I had to pivot what the actual program I had written was doing, I decided that I also should have noticed earlier that I was not using the given input properly, which is 100% the biggest area to improve, a simple mistake that can cost a lot of time. As they say in the resataurant industry, "Slow down to speed up!".
+- As always there are tons of places a person can improve. I think right away I would say that I am not where I want to be with my git history. I got a little caught up in the ADHD zone, and did not commit as frequently as I wanted to. I did an alright job taking time to plan for this challenge, I wrote my initial game plan out on post it notes, and moved htem around on my white board. As I had to pivot what the actual program I had written was doing, I decided that I also should have noticed earlier that I was not using the given input properly, which is 100% the biggest area to improve, a simple mistake that can cost a lot of time. As they say in the resataurant industry, "Slow down to speed up!". Lastly, testing can always improve!!!
 
