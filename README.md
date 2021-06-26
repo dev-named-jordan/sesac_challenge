@@ -4,8 +4,8 @@
 
 - [My Solutions](#my-solutions)
 - [Local Install](#local-install)
-- [Testing Tech Used](#testing-tech-used)
 - [Prerequisites](#prerequisites)
+- [Testing Tech Used](#testing-tech-used)
 - [How it came together](#how-it-came-together)
   - [TLDR](#TLDR)
   - [princess_1](#princess_1)
@@ -45,17 +45,17 @@
 
   - bundle exec rspec
 
-## Testing Tech Used
-
-- [RSpec](https://rspec.info/documentation/3.10/rspec-core/) 
-- [pry](https://github.com/pry/pry)
-- [simplecov](https://github.com/simplecov-ruby/simplecov)
-
 ## Prerequisites
 
 * __Ruby__
 
   - The project is built using __ruby version 2.5.3p105__, you must install ruby on your local machine first. Please visit the [ruby](https://www.ruby-lang.org/en/documentation/installation/) home page to get set up. _Please ensure you install the version of ruby noted above._
+
+## Testing Tech Used
+
+- [RSpec](https://rspec.info/documentation/3.10/rspec-core/) 
+- [pry](https://github.com/pry/pry)
+- [simplecov](https://github.com/simplecov-ruby/simplecov)
 
 # How it came together
 
