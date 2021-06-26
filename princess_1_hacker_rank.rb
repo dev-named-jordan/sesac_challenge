@@ -18,23 +18,11 @@ def make_path(m, bot_location, princess_location)
   moves.join.gsub(",", "\n")
 end
 
-def locate_bot(grid)
+def locate_character(grid, character)
   grid.each_with_index do |element, index|
-    if element.include?("m")
+    if element.include?(character)
       element.chars.each_with_index do |e, i|
-        if e == "m"
-          return [index, i]
-        end
-      end
-    end
-  end
-end
-
-def locate_princess(grid)
-  grid.each_with_index do |element, index|
-    if element.include?("p")
-      element.chars.each_with_index do |e, i|
-        if e == "p"
+        if e == character
           return [index, i]
         end
       end
@@ -43,8 +31,8 @@ def locate_princess(grid)
 end
 
 def displayPathtoPrincess(m, grid)
-  bot_location = locate_bot(grid)
-  princess_location = locate_princess(grid)
+  bot_location = locate_character(grid, "m")
+  princess_location = locate_character(grid, "p")
   puts make_path(m, bot_location, princess_location)
 end
 
