@@ -108,7 +108,7 @@ Both exercises used the exact same methods to locate characters, so I made anoth
 
 - Becasue of how I structured the 1st exercise, the 2nd was nearly done when I started it. The only changes are slightly different inputs for the Path Class, and no need for a Bot class any longer. At the end of the make_path method, we split at \n to create an array of the directions, then we take the first one. This means, that the code for princess_1, applied here, could still find the princess from any bot starting point.
 
-![Screen Shot 2021-06-25 at 7 23 06 PM](https://user-images.githubusercontent.com/68141454/123497439-c8a12680-d5ea-11eb-9940-c1a502b7b925.png)
+![Screen Shot 2021-06-26 at 12 59 29 PM](https://user-images.githubusercontent.com/68141454/123523028-5b3ed580-d67e-11eb-8830-2084cfdc70bb.png)
 
 ## Testing 
 
