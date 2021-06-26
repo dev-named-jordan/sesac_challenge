@@ -48,7 +48,7 @@
 - [princess_1](#princess_1)
     - [Bot & Princess](#bot-&-princess)
     - [Path](#path)
-    - [Module](#module)
+    - [Path Helper Module](#path-helper-module)
 - [princess_2](#princess_2)
 
 ### TLDR
@@ -63,7 +63,11 @@
 
 - Bot, and Princess classes in princess_1 ended up nearly the same and are potentially an opportunity for refactor. The only responsibility for each of them, is to find their own locaitons on the grid input, using a class method. This was achieved through using nested iterations and each_with_index, to validate the presence and location of both "m" and "p", on the board, then return the location. 
 
+#### Path
+
 - Path was the only other class I ended up needing for the exercise. Though I must also mention here, that Path leans heavily on the path_helper_module, used by both exercises, and to be discussed more later. The Path class begins with a gaurd clause for bad input data form the user. Allowing for only Integer, Odd, and between 3-99 for the size, and allowing only an Array for the grid. Next, we call on the class methods from Bot, and Princess and assign them to variables, then use those variables as arguments for the make_path method in the path_helper_module. 
+
+#### Path Helper Module
 
 - Becaue I am using class methods everywhere outside of the module, I used extend, instead of include in my Path class. The path_helper_module was composed of multiple methods, that work together. They are make_path, and directions. Eventually removed and not needed, was also a number_cleaner, for absolute value math. "make_path" itself, calls on "directions" eventually. First, in make_path, we find the first and second move. We get these moves by doing some math. The first move is based on the absolute value of the first index of the bot location, minus the first index of the princess location. The second move is based on the same idea, but with the second index, instead of the first. These variables are then included in the next lines arguments for the directions method. "directions" is a method that uses the locations of bot, and princess, along with the first move and second move, to find a route between the bot and princess, on the grid. Conditional logic is used here to decide if up/down/left/right are needed, and how much. Finally the directions method stores "moves" in an Array with the same name, the moves are evnetually called at the end of the method, using a join, and gsub to replace their commas with "\n". 
 
