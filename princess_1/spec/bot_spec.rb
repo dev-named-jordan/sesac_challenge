@@ -4,9 +4,10 @@ require_relative '../lib/bot'
 RSpec.describe 'Bot' do
   describe 'Bot methods' do
     it 'can locate bot grid from grid input' do
-      size = 3
+      # size = 3
       grid = ["---", "-m-", "--p"]
-      bot_location = Bot.locate_bot(grid)
+      character = "m"
+      bot_location = Bot.locate_character(grid, character)
       expect(bot_location).to be_an(Array)
       expect(bot_location).to eq([1, 1])
     end
