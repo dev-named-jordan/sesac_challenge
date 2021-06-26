@@ -9,11 +9,12 @@
 - [How it came together](#how-it-came-together)
   - [TLDR](#TLDR)
   - [princess_1](#princess_1)
-  - [Bot and Princess Classes](#bot-and-princess-classes)
-  - [Path Class](#path-class)
-  - [Path Helper Module](#path-helper-module)
-  - [Locator Helper Module](#locator-helper-module)
+  - [- Bot and Princess Classes](#bot-and-princess-classes)
+  - [- Path Class](#path-class)
+  - [- Path Helper Module](#path-helper-module)
+  - [- Locator Helper Module](#locator-helper-module)
   - [princess_2](#princess_2)
+  - [The Difference](#the-difference)
   - [Testing](#testing)
   - [Areas for Improvement](#areas-for-improvement)
 
@@ -98,17 +99,19 @@ Both exercises used the exact same methods to locate characters, so I made anoth
 
 ## princess_2
 
+### The Difference
+
 - Becasue of how I structured the 1st exercise, the 2nd was nearly done when I started it. The only changes are slightly different inputs for the Path Class, and no need for a Bot class any longer. At the end of the make_path method, we split at \n to create an array of the directions, then we take the first one. This means, that the code for princess_1, applied here, could still find the princess from any bot starting point.
 
 ![Screen Shot 2021-06-25 at 7 23 06 PM](https://user-images.githubusercontent.com/68141454/123497439-c8a12680-d5ea-11eb-9940-c1a502b7b925.png)
 
-### Testing 
+## Testing 
 
 - My testing is all passing, with a 100% in simplecov. This includes happy, and sad path testing, with some edge cases. A small example below -
 
 ![Screen Shot 2021-06-25 at 7 34 52 PM](https://user-images.githubusercontent.com/68141454/123497727-6cd79d00-d5ec-11eb-9fa9-3bf796c7162e.png)
 
-### Areas for Improvement
+## Areas for Improvement
 
 - As always there are tons of places a person can improve. I think right away I would say that I am not where I want to be with my git history. I got a little caught up in the ADHD zone, and did not commit as frequently as I wanted to. I did an alright job taking time to plan for this challenge, I decided to have a little fun, and wrote my initial game plan out on post it notes, and moved them around on my white board, to simulate a kanban project board. As I had to pivot what the actual program I had written was doing, I decided that I also should have noticed earlier, I was not using the given input properly, which is 100% the biggest area to improve. A simple mistake that can cost a lot of time. As they say in the restaurant industry, "Slow down to speed up!". Lastly, testing can always improve, even at 100% coverage!!!
 
