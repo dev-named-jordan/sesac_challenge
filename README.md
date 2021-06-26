@@ -79,13 +79,11 @@
 <img width="493" alt="Screen Shot 2021-06-26 at 10 35 47 AM" src="https://user-images.githubusercontent.com/68141454/123519719-46584700-d66a-11eb-99d8-c9d5ad059470.png">
 <img width="499" alt="Screen Shot 2021-06-26 at 10 36 13 AM" src="https://user-images.githubusercontent.com/68141454/123519734-5708bd00-d66a-11eb-9ae5-b1a144c0bc16.png">
 
-
 ### Path
 
 - Path was the only other class I ended up needing for the exercise, though I have Bot and Princess for OOP reasons, and readability. Though I must also mention here, that Path, and the Character classes lean heavily on their helper modules, used in both exercises, and to be discussed more later. The Path class begins with a gaurd clause for bad input data form the user. Allowing for only an Odd Integer, between 3-99 for the size argument, and allowing only an Array for the grid argument. Next, we call on the class methods from the locator module, through Bot, and Princess, and assign them to variables, then use those variables as arguments for the make_path method, called within the Path class method, from the [path_helper_module](#path-helper-module). 
 
 ![Screen Shot 2021-06-26 at 12 57 04 PM](https://user-images.githubusercontent.com/68141454/123522961-04d19700-d67e-11eb-85d3-08c84c5a1dab.png)
-
 
 ### Path Helper Module
 
@@ -100,7 +98,6 @@
 Both exercises used the exact same methods to locate characters, so I made another module to DRY up my code. 
 
 <img width="559" alt="Screen Shot 2021-06-26 at 10 34 40 AM" src="https://user-images.githubusercontent.com/68141454/123519691-2032a700-d66a-11eb-896c-62a592b51309.png">
-
 
 ## princess_2
 
