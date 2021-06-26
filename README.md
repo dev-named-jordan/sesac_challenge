@@ -69,10 +69,11 @@
 
 ### Bot and Princess
 
-- Bot, and Princess classes in princess_1 ended up nearly the same, and the shared method was refactored out into a module. The only responsibility for Bot and Princess Classes, is to find their own locations on the grid input, using another Class method which was refactored into a module. This method was made using nested iteration, and each_with_index, to validate the presence and location of both "m", or "p" chracters on the board, then return their locations in [row, column] format. 
+- Bot, and Princess classes in princess_1 ended up nearly the same, and the shared method was refactored out into a [locator_helper_module](#locator-helper-module). The only responsibility for Bot and Princess Classes, is to find their own locations on the grid input, using another Class method which was refactored into a module. This method was made using nested iteration, and each_with_index, to validate the presence and location of both "m", or "p" chracters on the board, then return their locations in [row, column] format. 
 
-![Screen Shot 2021-06-25 at 6 58 46 PM](https://user-images.githubusercontent.com/68141454/123496839-6135a780-d5e7-11eb-99f6-a48dd3e5e5d3.png)
-![Screen Shot 2021-06-25 at 7 16 26 PM](https://user-images.githubusercontent.com/68141454/123497285-d99d6800-d5e9-11eb-935e-5b44ea6a33e3.png)
+<img width="493" alt="Screen Shot 2021-06-26 at 10 35 47 AM" src="https://user-images.githubusercontent.com/68141454/123519719-46584700-d66a-11eb-99d8-c9d5ad059470.png">
+<img width="499" alt="Screen Shot 2021-06-26 at 10 36 13 AM" src="https://user-images.githubusercontent.com/68141454/123519734-5708bd00-d66a-11eb-9ae5-b1a144c0bc16.png">
+
 
 ### Path
 
