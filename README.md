@@ -77,7 +77,7 @@
 
 ### Path
 
-- Path was the only other class I ended up needing for the exercise, though I have Bot and Princess for OOP reasons, and readability. Though I must also mention here, that Path, and the Character classes lean heavily on their helper modules, used in both exercises, and to be discussed more later. The Path class begins with a gaurd clause for bad input data form the user. Allowing for only an Odd Integer, between 3-99 for the size argument, and allowing only an Array for the grid argument. Next, we call on the class methods from the locator module, through Bot, and Princess, and assign them to variables, then use those variables as arguments for the make_path method, called within the Path class method, from the path_helper_module](#path-helper-module). 
+- Path was the only other class I ended up needing for the exercise, though I have Bot and Princess for OOP reasons, and readability. Though I must also mention here, that Path, and the Character classes lean heavily on their helper modules, used in both exercises, and to be discussed more later. The Path class begins with a gaurd clause for bad input data form the user. Allowing for only an Odd Integer, between 3-99 for the size argument, and allowing only an Array for the grid argument. Next, we call on the class methods from the locator module, through Bot, and Princess, and assign them to variables, then use those variables as arguments for the make_path method, called within the Path class method, from the [path_helper_module](#path-helper-module). 
 
 ![Screen Shot 2021-06-25 at 6 58 04 PM](https://user-images.githubusercontent.com/68141454/123496824-49f6ba00-d5e7-11eb-8620-b2d41249dcba.png)
 
