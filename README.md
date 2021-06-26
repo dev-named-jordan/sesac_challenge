@@ -53,7 +53,7 @@
 
 ### TLDR
 
-- Initially, my thoughts on the exercise were to create a few classes - Grid, Bot, Princess, and Path. I would run everthing through the Grid class, so that I could eventually use my Grid class for both exercises. Eventually, I realized that I was not taking input the way I was expected to, and rather I had created a system that could randomly produce valid locations for bot and princess(Again, with the hope that I could use the logic for both exercises). This code is working, and fully tested under princess_1_oop(But obviously does not pass any Hacker Rank tests) if you are interested in taking a look.
+- Initially, my thoughts on the exercise were to create a few classes - Grid, Bot, Princess, and Path. I would run everthing through the Grid class, so that I could eventually use my Grid class for both exercises. Eventually, I realized that I was not taking input the way I was expected to, and rather I had created a system that could randomly produce valid locations for bot, and princess(Again, with the hope that I could use the logic for both exercises). This code is working, and fully tested under "princess_1_oop"(This does not pass any Hacker Rank tests, but I included it for further reference of some testing and OOP) if you are interested in taking a look.
 
 - What I needed to do, rather than create, and place objects was actually much simpler. Taking the size, and grid input provided to me, I was able to slim down my code quite a bit, and not require the instantiation of any objects in my code. Ultimatley, I was able to make a module to share my Path logic, for both exercises in addition to completing both exercises, with minimal classes, and with 100% coverage and passing tests.
 
