@@ -4,10 +4,15 @@
 
 - [My Solutions](#my-solutions)
 - [Local Install](#local-install)
-- [Tech Used](#tech-used)
-- [Prerequisites](#prerequisites)
+- [Testing Tech Used](#testing-tech-used)
 - [Prerequisites](#prerequisites)
 - [How it came together](#how-it-came-together)
+  - [TLDR](#TLDR)
+  - [princess_1](#princess_1)
+    - [Bot & Princess](#bot-&-princess)
+    - [Path](#path)
+    - [Path Helper Module](#path-helper-module)
+  - [princess_2](#princess_2)
 
 ## My solutions
 
