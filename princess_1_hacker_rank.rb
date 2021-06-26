@@ -2,19 +2,6 @@
 
 def make_path(m, bot_location, princess_location)
   moves = []
-  if princess_location[0] < 0
-    princess_location[0] = size - 1
-  end
-  if princess_location[1] < 0
-    princess_location[1] = size - 1
-  end
-  if bot_location[0] < 0
-    bot_location[0] = size - 1
-  end
-  if bot_location[1] < 0
-    bot_location[1] = size - 1
-  end
-
   first_move = (bot_location[0] - princess_location[0]).abs
   second_move = (bot_location[1] - princess_location[1]).abs
 
