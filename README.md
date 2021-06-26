@@ -9,10 +9,12 @@
 - [How it came together](#how-it-came-together)
   - [TLDR](#TLDR)
   - [princess_1](#princess_1)
-   - [Bot and Princess Classes](#bot-and-princess-classes)
-   - [Path Class](#path-class)
-   - [Path Helper Module](#path-helper-module)
+    [Bot and Princess Classes](#bot-and-princess-classes)
+    [Path Class](#path-class)
+    [Path Helper Module](#path-helper-module)
+    [Princess Helper Module](#princess-helper-module)
   - [princess_2](#princess_2)
+  - [Areas for Improvement](#areas-for-improvement)
 
 ## My solutions
 
@@ -53,16 +55,16 @@
 
 - Initially, my thoughts on the exercise were to create a few classes - Grid, Bot, Princess, and Path. I would run everthing through the Grid class, so that I could eventually use my Grid class for both exercises. Eventually, I realized that I was not taking input the way I was expected to, and rather I had created a system that could randomly produce valid locations for bot, and princess(Again, with the hope that I could use the logic for both exercises). This code is working, and fully tested under "princess_1_oop"(This does not pass any Hacker Rank tests, but I included it for further reference of some testing and OOP) if you are interested in taking a look.
 
-- What I needed to do, rather than create, and place objects was actually much simpler. Taking the size, and grid input provided to me, I was able to slim down my code quite a bit, and not require the instantiation of any objects in my code. Ultimatley, I was able to make a module to share my Path logic, for both exercises in addition to completing both exercises, with minimal classes, and with 100% coverage and passing tests.
+- What I needed to do, rather than create, and place objects was actually much simpler. Taking the size, and grid input provided to me, I was able to slim down my code quite a bit, and not require the instantiation of any objects in my code. Ultimatley, I was able to make a module to share my Path logic, and another to share the Princess logic for both exercises, in addition to completing both exercises, with minimal classes, and with 100% coverage and passing tests.
 
 ## princess_1
 
-### Bot & Princess
+### Bot and Princess
 
-- Bot, and Princess classes in princess_1 ended up nearly the same, and are potentially an opportunity for a refactor. The only responsibility for each of them, is to find their own locations on the grid input, using a Class method. This Class method was made using nested iteration, and each_with_index, to validate the presence and location of both "m" and "p", on the board, then return their locations in the [row, column] format. 
+- Bot, and Princess classes in princess_1 ended up nearly the same, and are potentially an opportunity for a refactor. Though I did refactor the Princess class mehod into a module for use in both exercises. The only responsibility for Bot and Princess, is to find their own locations on the grid input, using another Class method. This Class method was made using nested iteration, and each_with_index, to validate the presence and location of both "m", or "p", on the board, then return their locations in the [row, column] format. 
 
 ![Screen Shot 2021-06-25 at 6 58 46 PM](https://user-images.githubusercontent.com/68141454/123496839-6135a780-d5e7-11eb-99f6-a48dd3e5e5d3.png)
-![Screen Shot 2021-06-25 at 6 59 16 PM](https://user-images.githubusercontent.com/68141454/123496858-73174a80-d5e7-11eb-87a2-0ba48cfc358b.png)
+![Screen Shot 2021-06-25 at 7 16 26 PM](https://user-images.githubusercontent.com/68141454/123497285-d99d6800-d5e9-11eb-935e-5b44ea6a33e3.png)
 
 ### Path
 
@@ -78,10 +80,19 @@ These first and second move variables are then included in the next lines argume
 
 ![Screen Shot 2021-06-25 at 6 56 39 PM](https://user-images.githubusercontent.com/68141454/123496796-174cc180-d5e7-11eb-9c76-1196677af736.png)
 
+### Princess Helper Module
+
+Both exercises used the exact same methods for locate_princes, so I made another module to DRY up my code. 
+
+![Screen Shot 2021-06-25 at 7 17 39 PM](https://user-images.githubusercontent.com/68141454/123497310-06517f80-d5ea-11eb-9d70-69fa671eee26.png)
 
 ## princess_2
 
 - Becasue of how I structured the 1st exercise, the 2nd was nearly done when I started it. The only changes are slightly different inputs for the Path Class, and no need for a Bot class any longer. 
 
-![Screen Shot 2021-06-25 at 7 00 54 PM](https://user-images.githubusercontent.com/68141454/123496893-ae197e00-d5e7-11eb-9c63-fe7343047dd9.png)
+![Screen Shot 2021-06-25 at 7 23 06 PM](https://user-images.githubusercontent.com/68141454/123497439-c8a12680-d5ea-11eb-9940-c1a502b7b925.png)
+
+### Areas for Improvement
+
+- As always there are tons of places a person can improve. I think right away I would say that I am not where I want to be with my git history. I got a little caught up in the ADHD zone, and did not commit as frequently as I wanted to. I did an alright job taking time to plan for this challenge, I wrote my initial game plan out on post it notes, and moved htem around on my white board. As I had to pivot what the actual program I had written was doing, I decided that I also should have noticed earlier that I was not using the given input properly, which is 100% the biggest area to improve, a simple mistake that can cost a lot of time. As they say in the resataurant industry, "Slow down to speed up!".
 
