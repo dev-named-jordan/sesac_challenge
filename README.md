@@ -29,7 +29,7 @@
 
 - If you would like to install and run tests locally run the instructions below, in your terminal.
 
-  - git@github.com:jordanfbeck0528/sesac_challenge.git
+  - git clone git@github.com:jordanfbeck0528/sesac_challenge.git
   
   - cd sesac
   
