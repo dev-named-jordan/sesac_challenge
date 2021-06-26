@@ -61,7 +61,7 @@
 
 #### Bot & Princess
 
-- Bot, and Princess classes in princess_1 ended up nearly the same and are potentially an opportunity for refactor. The only responsibility for each of them, is to find their own locaitons on the grid input, using a class method. This was achieved through using nested iterations and each_with_index, to validate the presence and location of both "m" and "p", on the board, then return the location. 
+- Bot, and Princess classes in princess_1 ended up nearly the same, and are potentially an opportunity for a refactor. The only responsibility for each of them, is to find their own locations on the grid input, using a Class method. This Class method was made using nested iteration, and each_with_index, to validate the presence and location of both "m" and "p", on the board, then return their locations in the [row, column] format. 
 
 #### Path
 
