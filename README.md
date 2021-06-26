@@ -21,9 +21,9 @@
 
 - These are my solutions for the "Bot Saves Princess challenge 1 & 2". Navigate to the 2nd link on each challenge listed below, for access to a gist file, which you can copy/paste at the bottom of the Hacker Rank challenge page, located in the first link "challenge", "1", or "2" below. Make sure to change the Hacker Rank submission setting to "Ruby". Additionally, if you are not familiar with these challenges, you can read them directly at the first link. The solutions below are refactored  for maximum efficiency as a hacker rank submission. Installing [locally](#local-install), or viewing [princess_1](https://github.com/jordanfbeck0528/sesac_challenge/tree/main/princess_1), [princess_2](https://github.com/jordanfbeck0528/sesac_challenge/tree/main/princess_2), and [modules](https://github.com/jordanfbeck0528/sesac_challenge/tree/main/modules) from the code on my [GitHub](https://github.com/jordanfbeck0528/sesac_challenge) - will allow you to view the code as it exists in it's classes, and modules.
 
-  [Challenge 1](https://www.hackerrank.com/challenges/saveprincess)  - https://gist.github.com/jordanfbeck0528/420d1dccce286f3d78cfe95e2b0f1ea3
+  [Hacker Rank Challenge 1](https://www.hackerrank.com/challenges/saveprincess)  - https://gist.github.com/jordanfbeck0528/420d1dccce286f3d78cfe95e2b0f1ea3
 
-  [Challenge 2](https://www.hackerrank.com/challenges/saveprincess2) - https://gist.github.com/jordanfbeck0528/185c9ad15f062ea1e9293674aa1d13f8
+  [Hacker Rank Challenge 2](https://www.hackerrank.com/challenges/saveprincess2) - https://gist.github.com/jordanfbeck0528/185c9ad15f062ea1e9293674aa1d13f8
 
 ## Local Install
 
