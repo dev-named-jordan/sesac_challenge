@@ -2,7 +2,6 @@ module PathHelper
   def make_path(m, bot_location, princess_location)
     first_move = (bot_location[0] - princess_location[0]).abs
     second_move = (bot_location[1] - princess_location[1]).abs
-
     directions(first_move, second_move, bot_location, princess_location)
   end
 
