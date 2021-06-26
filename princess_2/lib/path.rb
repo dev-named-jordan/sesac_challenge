@@ -8,7 +8,7 @@ class Path
       return "Input is invalid"
     end
     bot_location = [r, c]
-    princess_location = Princess.locate_princess(grid)
+    princess_location = Princess.locate_character(grid, "p")
     make_path(n, bot_location, princess_location).split("\n").first
   end
 end

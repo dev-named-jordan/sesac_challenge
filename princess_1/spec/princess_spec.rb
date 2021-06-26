@@ -6,7 +6,8 @@ RSpec.describe 'Princess' do
     it 'can locate princess grid from grid input' do
       size = 3
       grid = ["---", "-m-", "--p"]
-      princess_location = Princess.locate_princess(grid)
+      character = "p"
+      princess_location = Princess.locate_character(grid, character)
       expect(princess_location).to be_an(Array)
       expect(princess_location).to eq([2, 2])
     end
