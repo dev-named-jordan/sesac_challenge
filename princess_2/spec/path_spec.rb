@@ -20,6 +20,22 @@ RSpec.describe 'Path' do
       grid = ["-----", "-----", "--mp-", "-----", "-----"]
       expect(Path.nextMove(n,r,c,grid)).to eq("RIGHT")
     end
+    it 'gives error when input is invalid with n as a string' do
+      n = "3"
+      r = 1
+      c = 2
+      grid = ["-----", "-----", "p--m-", "-----", "-----"]
+      new_path = Path.nextMove(n, r, c, grid)
+      expect(new_path).to eq("Input is invalid")
+    end
+    it 'gives error when input is invalid with n as a float' do
+      n = 3.0
+      r = 1
+      c = 2
+      grid = ["-----", "-----", "p--m-", "-----", "-----"]
+      new_path = Path.nextMove(n, r, c, grid)
+      expect(new_path).to eq("Input is invalid")
+    end
     it 'gives error when input is invalid with r as a string' do
       n = 3
       r = "1"
@@ -32,6 +48,22 @@ RSpec.describe 'Path' do
       n = 3
       r = 1
       c = "2"
+      grid = ["-----", "-----", "p--m-", "-----", "-----"]
+      new_path = Path.nextMove(n, r, c, grid)
+      expect(new_path).to eq("Input is invalid")
+    end
+    it 'gives error when input is invalid with n < 3' do
+      n = 1
+      r = 1
+      c = "2"
+      grid = ["-----", "-----", "p--m-", "-----", "-----"]
+      new_path = Path.nextMove(n, r, c, grid)
+      expect(new_path).to eq("Input is invalid")
+    end
+    it 'gives error when input is invalid with n > 99' do
+      n = 101
+      r = 1
+      c = 2
       grid = ["-----", "-----", "p--m-", "-----", "-----"]
       new_path = Path.nextMove(n, r, c, grid)
       expect(new_path).to eq("Input is invalid")
