@@ -49,13 +49,6 @@
 
 ## How it came together
 
-- [TLDR](#TLDR)
-- [princess_1](#princess_1)
-    - [Bot & Princess](#bot-&-princess)
-    - [Path](#path)
-    - [Path Helper Module](#path-helper-module)
-- [princess_2](#princess_2)
-
 ### TLDR
 
 - Initially, my thoughts on the exercise were to create a few classes - Grid, Bot, Princess, and Path. I would run everthing through the Grid class, so that I could eventually use my Grid class for both exercises. Eventually, I realized that I was not taking input the way I was expected to, and rather I had created a system that could randomly produce valid locations for bot, and princess(Again, with the hope that I could use the logic for both exercises). This code is working, and fully tested under "princess_1_oop"(This does not pass any Hacker Rank tests, but I included it for further reference of some testing and OOP) if you are interested in taking a look.
