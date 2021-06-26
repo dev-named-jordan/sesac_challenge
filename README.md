@@ -30,12 +30,19 @@
 - If you would like to install and run tests locally run the instructions below, in your terminal.
 
   - git@github.com:jordanfbeck0528/sesac_challenge.git
+  
   - cd sesac
+  
   - bundle install
+  
   - cd princess_1
+
   - bundle exec rspec
+
   - cd ..
+
   - cd princess_2
+
   - bundle exec rspec
 
 ## Testing Tech Used
