@@ -47,30 +47,30 @@
 
   - The project is built using __ruby version 2.5.3p105__, you must install ruby on your local machine first. Please visit the [ruby](https://www.ruby-lang.org/en/documentation/installation/) home page to get set up. _Please ensure you install the version of ruby noted above._
 
-## How it came together
+# How it came together
 
-### TLDR
+## TLDR
 
 - Initially, my thoughts on the exercise were to create a few classes - Grid, Bot, Princess, and Path. I would run everthing through the Grid class, so that I could eventually use my Grid class for both exercises. Eventually, I realized that I was not taking input the way I was expected to, and rather I had created a system that could randomly produce valid locations for bot, and princess(Again, with the hope that I could use the logic for both exercises). This code is working, and fully tested under "princess_1_oop"(This does not pass any Hacker Rank tests, but I included it for further reference of some testing and OOP) if you are interested in taking a look.
 
 - What I needed to do, rather than create, and place objects was actually much simpler. Taking the size, and grid input provided to me, I was able to slim down my code quite a bit, and not require the instantiation of any objects in my code. Ultimatley, I was able to make a module to share my Path logic, for both exercises in addition to completing both exercises, with minimal classes, and with 100% coverage and passing tests.
 
-### princess_1
+## princess_1
 
-#### Bot & Princess
+### Bot & Princess
 
 - Bot, and Princess classes in princess_1 ended up nearly the same, and are potentially an opportunity for a refactor. The only responsibility for each of them, is to find their own locations on the grid input, using a Class method. This Class method was made using nested iteration, and each_with_index, to validate the presence and location of both "m" and "p", on the board, then return their locations in the [row, column] format. 
 
 ![Screen Shot 2021-06-25 at 6 58 46 PM](https://user-images.githubusercontent.com/68141454/123496839-6135a780-d5e7-11eb-99f6-a48dd3e5e5d3.png)
 ![Screen Shot 2021-06-25 at 6 59 16 PM](https://user-images.githubusercontent.com/68141454/123496858-73174a80-d5e7-11eb-87a2-0ba48cfc358b.png)
 
-#### Path
+### Path
 
 - Path was the only other class I ended up needing for the exercise. Though I must also mention here, that Path leans heavily on the path_helper_module, used by both exercises, and to be discussed more later. The Path class begins with a gaurd clause for bad input data form the user. Allowing for only Integer, Odd, and between 3-99 for the size, and allowing only an Array for the grid. Next, we call on the class methods from Bot, and Princess, and assign them to variables, then use those variables as arguments for the make_path method, called within the Path class method, from the path_helper_module. 
 
 ![Screen Shot 2021-06-25 at 6 58 04 PM](https://user-images.githubusercontent.com/68141454/123496824-49f6ba00-d5e7-11eb-8620-b2d41249dcba.png)
 
-#### Path Helper Module
+### Path Helper Module
 
 - Becaue I am using class methods everywhere outside of the module, I used extend, instead of include in my Path class. The path_helper_module was composed of multiple methods, that work together. They are make_path, and directions. Eventually removed and not needed, was also a number_cleaner, for absolute value math. "make_path" itself, calls on "directions" eventually. First, in make_path, we find the first and second move. We get these moves by doing some math. The first move is based on the absolute value of the first index of the bot location, minus the first index of the princess location. The second move is based on the same idea, but with the second index, instead of the first. 
 
@@ -79,7 +79,7 @@ These first and second move variables are then included in the next lines argume
 ![Screen Shot 2021-06-25 at 6 56 39 PM](https://user-images.githubusercontent.com/68141454/123496796-174cc180-d5e7-11eb-9c76-1196677af736.png)
 
 
-### princess_2
+## princess_2
 
 - Becasue of how I structured the 1st exercise, the 2nd was nearly done when I started it. The only changes are slightly different inputs for the Path Class, and no need for a Bot class any longer. 
 
